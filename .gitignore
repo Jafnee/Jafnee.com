@@ -1,9 +1,6 @@
 ## NPM ##
 node_modules
 
-## SRC ##
-/src/*
-
 ## Sass ##
 .sass-cache/
 *.css.map

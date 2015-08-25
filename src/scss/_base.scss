@@ -1,0 +1,22 @@
+body {
+    position: relative;
+    color: $clr-font;
+    padding-left: 0;
+    background: $clr-background;
+    font-family: "Open Sans", sans-serif;
+}
+
+body,
+#side-bar,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}

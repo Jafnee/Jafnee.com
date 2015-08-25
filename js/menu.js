@@ -1,6 +1,7 @@
 (function (window, document) {
 
     var sidebar = document.getElementById('side-bar'),
+        expandicon = document.getElementById('expandicon'),
         menuLink = document.getElementById('menuLink');
 
     function toggleClass(element, className) {
@@ -28,6 +29,14 @@
         e.preventDefault();
         toggleClass(menuLink, active);
         toggleClass(sidebar, active);
+
+        var right = "fa fa-arrow-right fa-2x"
+        var left = "fa fa-arrow-left fa-2x"
+        if ( sidebar.className.match(/(?:^|\s)active(?!\S)/) ) {
+            expandicon.className = left;
+        } else {
+            expandicon.className = right;
+        }
     };
 
 }(this, this.document));

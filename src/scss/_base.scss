@@ -1,7 +1,9 @@
 body {
     position: relative;
-    color: #777;
+    color: $clr-font;
     padding-left: 0;
+    background: $clr-background;
+    font-family: "Open Sans", sans-serif;
 }
 
 body,

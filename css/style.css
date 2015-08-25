@@ -25,6 +25,16 @@ body {
 .hideme {
   visibility: hidden; }
 
+.menu-link {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #191818;
+  background: #1f8dd6;
+  padding: 7px;
+  border-radius: 0 50% 50% 0; }
+
 #side-bar {
   margin-left: 0px;
   /* "#menu" width */
@@ -65,7 +75,7 @@ body {
     #side-bar .pure-menu .pure-menu-heading {
       text-align: center;
       background: #1f8dd6;
-      font-size: 1.5em;
+      font-size: 1.3em;
       color: #fff;
       margin: 0;
       padding: 1em 0 1em 0; }
@@ -84,6 +94,22 @@ body {
 
   .hideme {
     visibility: visible; } }
+@media (max-width: 46em) {
+  body {
+    padding-left: 0; }
+
+  #side-bar {
+    margin-left: -10em; }
+
+  #side-bar.active {
+    margin-left: 0; }
+
+  .menu-link {
+    visibility: visible; }
+
+  .menu-link.active {
+    visibility: visible;
+    left: 10em; } }
 header {
   margin: 0;
   color: #333;

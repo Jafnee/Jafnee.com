@@ -9,6 +9,17 @@ body {
     visibility: hidden;
 }
 
+.menu-link {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: $clr-menu-background;
+    background: $clr-menu-header;
+    padding: 7px;
+    border-radius: 0 50% 50% 0;
+}
+
 #side-bar {
     margin-left: 0px; /* "#menu" width */
     width: $side-bar-width;
@@ -59,7 +70,7 @@ body {
         .pure-menu-heading {
             text-align: center;
             background: $clr-menu-header;
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: $clr-menu-header-font;
             margin: 0;
             padding: 1em 0 1em 0;
@@ -88,5 +99,28 @@ body {
 
     .hideme {
         visibility: visible;
+    }
+}
+
+@media (max-width: 46em) {
+    body {
+        padding-left: 0;
+    }
+
+    #side-bar {
+        margin-left: -$side-bar-width;
+    }
+
+    #side-bar.active {
+        margin-left: 0;
+    }
+
+    .menu-link {
+        visibility: visible;
+    }
+
+    .menu-link.active {
+        visibility: visible;
+        left: $side-bar-width;
     }
 }

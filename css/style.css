@@ -22,6 +22,19 @@ body,
 body {
   padding-left: 10em; }
 
+.hideme {
+  visibility: hidden; }
+
+.menu-link {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #191818;
+  background: #1f8dd6;
+  padding: 7px;
+  border-radius: 0 50% 50% 0; }
+
 #side-bar {
   margin-left: 0px;
   /* "#menu" width */
@@ -33,7 +46,7 @@ body {
   z-index: 100;
   /* so the menu or its navicon stays above all content */
   background: #191818;
-  -webkit-overflow-scrolling: touch; }
+  overflow: auto; }
   #side-bar .profile-pic {
     width: 80%;
     display: block;
@@ -48,7 +61,7 @@ body {
   #side-bar .pure-menu {
     width: 100%;
     border: none;
-    background: transparent; }
+    background: inherit; }
     #side-bar .pure-menu ul {
       padding-left: 5px;
       border: none;
@@ -62,7 +75,7 @@ body {
     #side-bar .pure-menu .pure-menu-heading {
       text-align: center;
       background: #1f8dd6;
-      font-size: 1.5em;
+      font-size: 1.3em;
       color: #fff;
       margin: 0;
       padding: 1em 0 1em 0; }
@@ -71,9 +84,32 @@ body {
         color: inherit; }
   #side-bar #social {
     position: absolute;
-    bottom: 0px;
-    padding-bottom: 20px; }
+    bottom: 0;
+    padding-bottom: 20px;
+    z-index: -1; }
 
+@media (max-height: 40em) {
+  #side-bar #social {
+    visibility: hidden; }
+
+  .hideme {
+    visibility: visible; } }
+@media (max-width: 46em) {
+  body {
+    padding-left: 0; }
+
+  #side-bar {
+    margin-left: -10em; }
+
+  #side-bar.active {
+    margin-left: 0; }
+
+  .menu-link {
+    visibility: visible; }
+
+  .menu-link.active {
+    visibility: visible;
+    left: 10em; } }
 header {
   margin: 0;
   color: #333;

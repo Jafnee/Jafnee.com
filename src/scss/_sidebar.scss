@@ -5,6 +5,21 @@ body {
     padding-left: $side-bar-width;
 }
 
+.hideme {
+    visibility: hidden;
+}
+
+.menu-link {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: $clr-menu-background;
+    background: $clr-menu-header;
+    padding: 7px;
+    border-radius: 0 50% 50% 0;
+}
+
 #side-bar {
     margin-left: 0px; /* "#menu" width */
     width: $side-bar-width;
@@ -14,8 +29,8 @@ body {
     bottom: 0;
     z-index: 100; /* so the menu or its navicon stays above all content */
     background: $clr-menu-background;
-    //overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    //-webkit-overflow-scrolling: touch;
 
     .profile-pic {
         width: 80%;
@@ -35,7 +50,7 @@ body {
     .pure-menu {
         width: 100%;
         border: none;
-        background: transparent;
+        background: inherit;
 
         ul {
             padding-left: 5px;
@@ -55,7 +70,7 @@ body {
         .pure-menu-heading {
             text-align: center;
             background: $clr-menu-header;
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: $clr-menu-header-font;
             margin: 0;
             padding: 1em 0 1em 0;
@@ -69,7 +84,43 @@ body {
 
     #social {
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         padding-bottom: 20px;
+        z-index: -1;
+    }
+}
+
+// Responsive
+
+@media (max-height: 40em) {
+    #side-bar #social {
+        visibility: hidden;
+    }
+
+    .hideme {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 46em) {
+    body {
+        padding-left: 0;
+    }
+
+    #side-bar {
+        margin-left: -$side-bar-width;
+    }
+
+    #side-bar.active {
+        margin-left: 0;
+    }
+
+    .menu-link {
+        visibility: visible;
+    }
+
+    .menu-link.active {
+        visibility: visible;
+        left: $side-bar-width;
     }
 }

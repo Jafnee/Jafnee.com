@@ -13,3 +13,8 @@ body,
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}

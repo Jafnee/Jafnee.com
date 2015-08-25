@@ -24,11 +24,18 @@ module.exports = function(grunt) {
 				files: 'src/scss/*.scss',
 				tasks: ['sass', 'cssmin']
 			}
+		},
+		shell: {
+			dep: {
+				command: './deploy.sh'
+			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.registerTask('default',['watch']);
+	grunt.loadNpmTasks('grunt-shell');
+	grunt.registerTask('dev',['watch']);
 	grunt.registerTask('build', ['sass', 'cssmin']);
+	grunt.registerTask('deploy', ['build', 'shell:dep']);
 }

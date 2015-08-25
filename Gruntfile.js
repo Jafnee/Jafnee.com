@@ -29,13 +29,28 @@ module.exports = function(grunt) {
 			dep: {
 				command: './deploy.sh'
 			}
+		},
+		imagemin: {
+			dynamic: {
+		      files: [{
+		        expand: true,
+		        cwd: 'src/img/',
+		        src: ['**/*.{png,jpg,gif}'],
+		        dest: 'img/'
+		    	}]
+	    	}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-newer');
+
 	grunt.registerTask('dev',['watch']);
-	grunt.registerTask('default', ['sass', 'cssmin']);
-	grunt.registerTask('deploy', ['default', 'shell:dep']);
+	grunt.registerTask('imgmin', ['newer:imagemin']);
+	grunt.registerTask('default', ['sass', 'cssmin', 'imgmin']);
+	grunt.registerTask('deploy', ['shell:dep']);
+	grunt.registerTask('build.deploy', ['default', 'shell:dep']);
 }

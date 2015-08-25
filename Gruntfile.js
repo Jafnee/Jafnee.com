@@ -36,6 +36,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.registerTask('dev',['watch']);
-	grunt.registerTask('build', ['sass', 'cssmin']);
-	grunt.registerTask('deploy', ['build', 'shell:dep']);
+	grunt.registerTask('default', ['sass', 'cssmin']);
+	grunt.registerTask('deploy', ['default', 'shell:dep']);
 }

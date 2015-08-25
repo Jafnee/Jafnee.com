@@ -52,5 +52,5 @@ module.exports = function(grunt) {
 	grunt.registerTask('imgmin', ['newer:imagemin']);
 	grunt.registerTask('default', ['sass', 'cssmin', 'imgmin']);
 	grunt.registerTask('deploy', ['shell:dep']);
-	grunt.registerTask('build.deploy', ['default', 'shell:dep']);
+	grunt.registerTask('buildndeploy', ['default', 'shell:dep']);
 }

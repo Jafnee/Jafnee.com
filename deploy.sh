@@ -6,4 +6,4 @@ SRC=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 rsync -vd $SRC/*.html $JAFNEESITEDIR
 rsync -vd $SRC/css/*.css $JAFNEESITEDIR/css/
 rsync -vd $SRC/img/* $JAFNEESITEDIR/img/
-#rsync -vd $SRC/js/*.js $JAFNEESITEDIR/js/
+rsync -vd $SRC/js/*.js $JAFNEESITEDIR/js/

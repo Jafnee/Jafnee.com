@@ -2,4 +2,10 @@
 # Set env var $JAFNEESITEDIR
 DIST=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/dist/
 
-rsync -va $DIST $JAFNEESITEDIR
+if [[ $JAFNEESITEDIR ]]
+then
+    rsync -va $DIST $JAFNEESITEDIR
+else
+    echo '$JAFNEESITEDIR is not set.'
+fi
+

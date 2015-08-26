@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
-# Set env JAFNEESITEDIR
-SRC=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+# Set env var $JAFNEESITEDIR
+DIST=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/dist/
 
-#git -C $SRC pull origin // Not working on server
-rsync -vd $SRC/*.html $JAFNEESITEDIR
-rsync -vd $SRC/css/*.css $JAFNEESITEDIR/css/
-rsync -vd $SRC/img/* $JAFNEESITEDIR/img/
-rsync -vd $SRC/js/*.js $JAFNEESITEDIR/js/
+if [[ $JAFNEESITEDIR ]]
+then
+    rsync -va $DIST $JAFNEESITEDIR
+else
+    echo '$JAFNEESITEDIR is not set.'
+fi
+

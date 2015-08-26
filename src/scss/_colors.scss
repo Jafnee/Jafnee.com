@@ -1,15 +1,20 @@
+// http://clrs.cc/ Palette
+$navy: #001f3f;
+$black: #111111;
+$silver: #DDDDDD;
+
 // Base
 $clr-background: white;
-$clr-font: #777;
 
 // Menu
 $clr-menu-header: #1f8dd6;
 $clr-menu-header-font: #fff;
 $clr-menu-background: #191818;
-$clr-menu-text: #999;
+$clr-menu-text: $silver;
 $clr-menu-focus: #333;
 
 // Content
-$clr-content-heading: #333;
-$clr-content-slogan: #ccc;
-$clr-content-subheading: #888;
+$clr-font: $black;
+$clr-content-heading: $navy;
+$clr-content-slogan: $black;
+$clr-content-subheading: $navy;

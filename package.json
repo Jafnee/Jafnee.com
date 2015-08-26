@@ -1,7 +1,6 @@
 {
-  "name": "jafneesite",
+  "name": "jafnee.com",
   "description": "My personal website",
-  "version": "0.0.1",
   "private": true,
   "devDependencies": {
     "grunt": "^0.4.5",

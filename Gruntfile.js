@@ -1,10 +1,24 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
+		mycfg: {
+			srcdir: 	'src',
+			distdir: 	'dist',
+			src: {
+				scss: 	'<%= mycfg.srcdir %>/scss',
+				js: 	'<%= mycfg.srcdir %>/js',
+				img: 	'<%= mycfg.srcdir %>/img'
+			},
+			dist: {
+				css: 	'<%= mycfg.distdir %>/css',
+				js: 	'<%= mycfg.distdir %>/js',
+				img: 	'<%= mycfg.distdir %>/img'
+			}
+		},
 		pkg: grunt.file.readJSON('package.json'),
 		sass: {
 			dist: {
 				files: {
-					'css/style.css' : 'src/scss/style.scss'
+					'<%= mycfg.dist.css %>/style.css' : '<%= mycfg.src.scss %>/style.scss'
 				}
 			}
 		},
@@ -12,16 +26,16 @@ module.exports = function(grunt) {
 		  target: {
 		    files: [{
 		      expand: true,
-		      cwd: 'css/',
+		      cwd: '<%= mycfg.dist.css %>/',
 		      src: ['*.css', '!*.min.css'],
-		      dest: 'css/',
+		      dest: '<%= mycfg.dist.css %>/',
 		      ext: '.min.css'
 		    }]
 		  }
 		},
 		watch: {
 			css: {
-				files: 'src/scss/*.scss',
+				files: '<%= mycfg.src.scss %>/*.scss',
 				tasks: ['sass', 'cssmin']
 			}
 		},
@@ -34,9 +48,9 @@ module.exports = function(grunt) {
 			dynamic: {
 		      files: [{
 		        expand: true,
-		        cwd: 'src/img/',
+		        cwd: '<%= mycfg.src.scss %>/',
 		        src: ['**/*.{png,jpg,gif}'],
-		        dest: 'img/'
+		        dest: '<%= mycfg.dist.scss %>/'
 		    	}]
 	    	}
 		}
@@ -50,7 +64,8 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('dev',['watch']);
 	grunt.registerTask('imgmin', ['newer:imagemin']);
-	grunt.registerTask('default', ['sass', 'cssmin', 'imgmin']);
+	grunt.registerTask('default', ['build']);
+	grunt.registerTask('build', ['sass', 'cssmin', 'imgmin']);
 	grunt.registerTask('deploy', ['shell:dep']);
-	grunt.registerTask('buildndeploy', ['default', 'shell:dep']);
+	grunt.registerTask('buildndeploy', ['build', 'shell:dep']);
 }

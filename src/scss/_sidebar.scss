@@ -54,7 +54,6 @@ body {
         background: inherit;
 
         ul {
-            padding-left: 5px;
             border: none;
             background: transparent;
         }
@@ -106,6 +105,11 @@ body {
 @media (max-width: 46em) {
     body {
         padding-left: 0;
+    }
+
+    footer {
+        position: absolute;
+        margin-left: -$side-bar-width;
     }
 
     #side-bar {

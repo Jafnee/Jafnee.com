@@ -1,5 +1,8 @@
 html {
   height: 100%; }
+  html a {
+    color: inherit;
+    text-decoration: inherit; }
 
 body {
   min-height: 100%;
@@ -65,8 +68,7 @@ body {
     border: 5px solid white; }
   #side-bar li > a {
     color: #DDDDDD;
-    border: none;
-    padding: 0.6em 0 0.6em 0.6em; }
+    border: none; }
   #side-bar .pure-menu {
     width: 100%;
     border: none;
@@ -75,11 +77,7 @@ body {
       border: none;
       background: transparent; }
     #side-bar .pure-menu li {
-      font-size: 1.1em;
-      border-bottom: 1px solid #DDDDDD; }
-      #side-bar .pure-menu li a:hover,
-      #side-bar .pure-menu li a:focus {
-        background: #333; }
+      font-size: 1.1em; }
     #side-bar .pure-menu .pure-menu-heading {
       text-align: center;
       background: #1f8dd6;
@@ -90,13 +88,24 @@ body {
       #side-bar .pure-menu .pure-menu-heading > a {
         text-decoration: inherit;
         color: inherit; }
+  #side-bar .main-nav li {
+    font-size: 1.1em;
+    border-bottom: 1px solid #DDDDDD; }
+    #side-bar .main-nav li a {
+      padding: 1em 0 1em 0.6em; }
+    #side-bar .main-nav li a:hover,
+    #side-bar .main-nav li a:focus {
+      background: #333; }
   #side-bar #social {
     position: absolute;
     bottom: 0;
     padding-bottom: 20px;
     z-index: -1; }
+    #side-bar #social li a:hover,
+    #side-bar #social li a:focus {
+      background: #333; }
 
-@media (max-height: 40em) {
+@media (max-height: 35.5em) {
   #side-bar #social {
     visibility: hidden; }
 

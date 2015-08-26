@@ -45,7 +45,6 @@ body {
     li>a {
         color: $clr-menu-text;
         border: none;
-        padding: 0.6em 0 0.6em 0.6em
     }
 
     .pure-menu {
@@ -59,12 +58,7 @@ body {
         }
 
         li {
-            a:hover,
-            a:focus {
-                background: $clr-menu-focus;
-            }
             font-size: 1.1em;
-            border-bottom: 1px solid $clr-menu-text;
         }
 
         .pure-menu-heading {
@@ -82,17 +76,38 @@ body {
         }
     }
 
+    .main-nav {
+        li {
+            a {
+                padding: 1em 0 1em 0.6em
+            }
+            a:hover,
+            a:focus {
+                background: $clr-menu-focus;
+            }
+            font-size: 1.1em;
+            border-bottom: 1px solid $clr-menu-text;
+        }
+    }
+
     #social {
         position: absolute;
         bottom: 0;
         padding-bottom: 20px;
         z-index: -1;
+
+        li {
+            a:hover,
+            a:focus {
+                background: $clr-menu-focus;
+            }
+        }
     }
 }
 
 // Responsive
 
-@media (max-height: 40em) {
+@media (max-height: 35.5em) {
     #side-bar #social {
         visibility: hidden;
     }

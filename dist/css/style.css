@@ -29,12 +29,12 @@ body,
 a {
   text-decoration: none; }
 
+.hideme {
+  visibility: hidden; }
+
 /* moves content out of the way of side-bar.*/
 body {
   padding-left: 10em; }
-
-.hideme {
-  visibility: hidden; }
 
 .menu-link {
   visibility: hidden;
@@ -42,10 +42,11 @@ body {
   top: 0;
   left: 0;
   color: #191818;
-  background: #1f8dd6;
+  background: white;
   padding: 7px;
-  border-radius: 0 50% 50% 0;
   z-index: 50; }
+  .menu-link.active {
+    background: #1f8dd6; }
 
 #side-bar {
   margin-left: 0px;
@@ -90,12 +91,14 @@ body {
         color: inherit; }
   #side-bar .main-nav li {
     font-size: 1.1em;
-    border-bottom: 1px solid #DDDDDD; }
+    border-bottom: 3px solid #DDDDDD; }
     #side-bar .main-nav li a {
       padding: 1em 0 1em 0.6em; }
     #side-bar .main-nav li a:hover,
     #side-bar .main-nav li a:focus {
       background: #333; }
+    #side-bar .main-nav li.first-item {
+      border-top: 3px solid #DDDDDD; }
   #side-bar #social {
     position: absolute;
     bottom: 0;

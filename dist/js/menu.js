@@ -30,12 +30,12 @@
         toggleClass(menuLink, active);
         toggleClass(sidebar, active);
 
-        var right = "fa fa-arrow-right fa-2x"
+        var burger = "fa fa-bars fa-2x"
         var left = "fa fa-arrow-left fa-2x"
         if ( sidebar.className.match(/(?:^|\s)active(?!\S)/) ) {
             expandicon.className = left;
         } else {
-            expandicon.className = right;
+            expandicon.className = burger;
         }
     };
 

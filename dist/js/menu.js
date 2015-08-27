@@ -31,9 +31,9 @@
         toggleClass(sidebar, active);
 
         var burger = "fa fa-bars fa-2x"
-        var left = "fa fa-arrow-left fa-2x"
+        var close = "fa fa-times fa-2x"
         if ( sidebar.className.match(/(?:^|\s)active(?!\S)/) ) {
-            expandicon.className = left;
+            expandicon.className = close;
         } else {
             expandicon.className = burger;
         }

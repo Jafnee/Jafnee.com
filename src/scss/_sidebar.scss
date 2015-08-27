@@ -5,20 +5,20 @@ body {
     padding-left: $side-bar-width;
 }
 
-.hideme {
-    visibility: hidden;
-}
-
 .menu-link {
     visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
     color: $clr-menu-background;
-    background: $clr-menu-header;
+    background: $clr-background;
     padding: 7px;
-    border-radius: 0 50% 50% 0;
+    //border-radius: 0 50% 50% 0;
     z-index: 50;
+
+    &.active {
+        background: $clr-menu-header;
+    }
 }
 
 #side-bar {
@@ -86,7 +86,10 @@ body {
                 background: $clr-menu-focus;
             }
             font-size: 1.1em;
-            border-bottom: 1px solid $clr-menu-text;
+            border-bottom: 3px solid $clr-menu-text;
+            &.first-item {
+                border-top: 3px solid $clr-menu-text;
+            }
         }
     }
 

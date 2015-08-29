@@ -7,5 +7,6 @@ then
     rsync -va $DIST $JAFNEESITEDIR
 else
     echo '$JAFNEESITEDIR is not set.'
+    exit 1
 fi
 

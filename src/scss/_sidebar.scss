@@ -1,5 +1,3 @@
-$side-bar-width: 10em;
-
 /* moves content out of the way of side-bar.*/
 body {
     padding-left: $side-bar-width;
@@ -13,7 +11,6 @@ body {
     color: $clr-menu-background;
     background: $clr-background;
     padding: 7px;
-    //border-radius: 0 50% 50% 0;
     z-index: 50;
 
     &.active {
@@ -22,15 +19,20 @@ body {
 }
 
 #side-bar {
-    margin-left: 0px; /* "#menu" width */
+    margin-left: 0px;
+
+    /* "#menu" width */
     width: $side-bar-width;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 100; /* so the menu or its navicon stays above all content */
+    z-index: 100;
+
+    /* so the menu or its navicon stays above all content */
     background: $clr-menu-background;
     overflow: auto;
+
     //-webkit-overflow-scrolling: touch;
 
     .profile-pic {
@@ -40,9 +42,9 @@ body {
         margin-right: auto;
         border-radius: 50%;
         border: 5px solid $clr-background;
-    }        
+    }
 
-    li>a {
+    li > a {
         color: $clr-menu-text;
         border: none;
     }
@@ -69,7 +71,7 @@ body {
             margin: 0;
             padding: 1em 0 1em 0;
 
-            &>a {
+            & > a {
                 text-decoration: inherit;
                 color: inherit;
             }
@@ -79,14 +81,17 @@ body {
     .main-nav {
         li {
             a {
-                padding: 1em 0 1em 0.6em
+                padding: 1em 0 1em 0.6em;
             }
+
             a:hover,
             a:focus {
                 background: $clr-menu-focus;
             }
+
             font-size: 1.1em;
             border-bottom: 3px solid $clr-menu-text;
+
             &.first-item {
                 border-top: 3px solid $clr-menu-text;
             }

@@ -1,8 +1,5 @@
 html {
   height: 100%; }
-  html a {
-    color: inherit;
-    text-decoration: inherit; }
 
 body {
   min-height: 100%;
@@ -10,8 +7,7 @@ body {
   color: #111111;
   padding: 0;
   margin: 0;
-  background: white;
-  font-family: "Open Sans", sans-serif; }
+  background: white; }
 
 body,
 #side-bar,
@@ -22,15 +18,16 @@ body,
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
 
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
 .pure-img-responsive {
   max-width: 100%;
   height: auto; }
 
-a {
-  text-decoration: none; }
-
-.hideme {
-  visibility: hidden; }
+.name {
+  font-family: "Roboto Slab", serif; }
 
 /* moves content out of the way of side-bar.*/
 body {
@@ -136,36 +133,39 @@ body {
     left: 10em; } }
 header {
   margin: 0;
+  padding: 2.5em 2em 2.5em;
   color: #001f3f;
-  text-align: center;
-  padding: 2.5em 2em 2.5em; }
+  text-align: center; }
   header > h1 {
     margin: 0.2em 0;
     font-size: 4em;
-    font-weight: 300; }
-  header > p {
     font-weight: 300;
-    color: #111111;
+    font-family: "Roboto Slab", serif; }
+  header > p {
+    margin-top: 0;
     padding: 0;
-    margin-top: 0; }
+    color: #111111;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif; }
 
-section#content article {
+section#main > article {
   position: relative;
   margin: 0 auto;
   padding: 0 2em 0.5em;
   max-width: 800px;
   margin-bottom: 50px;
-  line-height: 1.5em; }
-  section#content article img.center {
+  line-height: 1.5em;
+  font-family: "Open Sans", sans-serif; }
+  section#main > article > img.center {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  section#content article > h2 {
+  section#main > article > h2 {
     margin: 50px 0 20px 0;
-    font-weight: 300;
-    color: #001f3f; }
+    color: #001f3f;
+    font-weight: 300; }
 
-section#content {
+section#main {
   padding-bottom: 2.4em; }
 
 footer {
@@ -175,7 +175,8 @@ footer {
   left: 10em;
   right: 0;
   overflow: hidden;
-  height: 2.4em; }
+  height: 2.4em;
+  font-family: "Open Sans", sans-serif; }
   footer a {
     color: inherit;
     text-decoration: inherit; }

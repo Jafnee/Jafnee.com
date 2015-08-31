@@ -1,6 +1,5 @@
-$footer-height: 2.4em;
-
-section#content {
+section#main {
+    //Space for footer
     padding-bottom: $footer-height;
 }
 
@@ -12,6 +11,7 @@ footer {
     right: 0;
     overflow: hidden;
     height: $footer-height;
+    font-family: $sans-serif;
 
     a {
         color: inherit;

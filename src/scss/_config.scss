@@ -3,6 +3,7 @@ $navy: #001f3f;
 $black: #111111;
 $silver: #DDDDDD;
 
+//#### COLORS ####
 // Base
 $clr-background: white;
 
@@ -18,3 +19,15 @@ $clr-font: $black;
 $clr-content-heading: $navy;
 $clr-content-slogan: $black;
 $clr-content-subheading: $navy;
+
+//#### FONTS ####
+$serif: "Roboto Slab", serif;
+$sans-serif: "Open Sans", sans-serif;
+
+//#### LAYOUT ####
+
+// Side Bar
+$side-bar-width: 10em;
+
+// Footer
+$footer-height: 2.4em;

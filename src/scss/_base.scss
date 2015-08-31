@@ -1,9 +1,5 @@
 html {
     height: 100%;
-    a {
-        color: inherit;
-        text-decoration: inherit;
-    }
 }
 
 body {
@@ -13,7 +9,6 @@ body {
     padding: 0;
     margin: 0;
     background: $clr-background;
-    font-family: "Open Sans", sans-serif;
 }
 
 body,
@@ -26,15 +21,16 @@ body,
     transition: all 0.2s ease-out;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
 }
 
-a {
-    text-decoration: none;
-}
-
-.hideme {
-    visibility: hidden;
+.name {
+    font-family: $serif;
 }

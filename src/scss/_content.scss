@@ -1,42 +1,45 @@
 header {
     margin: 0;
+    padding: 2.5em 2em 2.5em;
     color: $clr-content-heading;
     text-align: center;
-    padding: 2.5em 2em 2.5em;
-    //border-bottom: 1px solid #eee;
 
-    &>h1 {
+    & > h1 {
         margin: 0.2em 0;
         font-size: 4em;
         font-weight: 300;
+        font-family: $serif;
     }
-    &>p {
-        font-weight: 300;
-        color: $clr-content-slogan;
-        padding: 0;
+
+    & > p {
         margin-top: 0;
+        padding: 0;
+        color: $clr-content-slogan;
+        font-weight: 300;
+        font-family: $sans-serif;
     }
 }
 
-section#content {
-    article {
+section#main {
+    & > article {
         position: relative;
         margin: 0 auto;
         padding: 0 2em 0.5em;
         max-width: 800px;
         margin-bottom: 50px;
         line-height: 1.5em;
+        font-family: $sans-serif;
 
-        img.center {
+        & > img.center {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
 
-        &>h2 {
+        & > h2 {
             margin: 50px 0 20px 0;
-            font-weight: 300;
             color: $clr-content-subheading;
+            font-weight: 300;
         }
     }
 }

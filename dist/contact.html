@@ -10,11 +10,11 @@
   <link rel="stylesheet" type="text/css" href="./css/style.min.css" media="screen">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  <script type="text/javascript" src="./js/menu.js" async></script>
+  <script type="text/javascript" src="./js/menu.min.js" async></script>
 </head>
 
 <body>
-  <a href="#menu" id="menuLink" class="menu-link">
+  <a href="" id="menuLink" class="menu-link">
     <span id="expandicon" class="fa fa-bars fa-2x"></span>
   </a>
   <div id="side-bar">
@@ -44,15 +44,29 @@
     <article>
       <h2>Contact Me</h2>
       <p>
+      Want to get in touch?
         <ul>
-          <li>E-Mail me at mail@jafnee.com</li>
+          <li>Drop me an email at mail@jafnee.com</li>
+          <li>Leave me a message using the contact form below</li>
         </ul>
-      </p>
-      <form style="visibility:hidden;" action="http://formspree.io/mail@jafnee.com"method="POST">
-        <input type="text" name="name">
-        <input type="email" name="_replyto">
-        <input type="submit" value="Send">
+      </p>      
+      <p>
+      <form class="pure-form pure-form-stacked" action="http://formspree.io/mail@jafnee.com"method="POST">
+
+      <legend>Contact Form</legend>
+        <fieldset>
+          <input type="hidden" name="_subject" value="Jafnee.com Contact Form."/>
+          <input type="text" name="_gotcha" style="display:none" />
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email"  name="_replyto" placeholder="Email" required>
+          <label for="message">Message</label>
+          <textarea style="width:100%;" id="message" class="text" name="message" placeholder="Your message..." required></textarea>          
+        </fieldset>
+        <input type="submit" class="pure-button pure-button-primary" value="Send">
       </form>
+      </p>
     </article>
   </section>
 

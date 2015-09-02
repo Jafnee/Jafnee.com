@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    font-size: 110%;
     min-height: 100%;
     position: relative;
     color: $clr-font;
@@ -28,4 +29,10 @@ body,
 
 .name {
     font-family: $serif;
+}
+
+@media (max-width: 46em) {
+    body {
+        font-size: 100%;
+    }
 }

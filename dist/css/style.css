@@ -2,6 +2,7 @@ html {
   height: 100%; }
 
 body {
+  font-size: 110%;
   min-height: 100%;
   position: relative;
   color: #111111;
@@ -25,6 +26,9 @@ body,
 .name {
   font-family: "Roboto Slab", serif; }
 
+@media (max-width: 46em) {
+  body {
+    font-size: 100%; } }
 /* moves content out of the way of side-bar.*/
 body {
   padding-left: 10em; }
@@ -132,6 +136,9 @@ header {
   padding: 2.5em 2em 1em;
   color: #001f3f;
   text-align: center; }
+  header a {
+    color: inherit;
+    text-decoration: inherit; }
   header > h1 {
     margin: 0.2em 0;
     font-size: 4em;

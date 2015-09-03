@@ -3,14 +3,14 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jafnee Jesmee</title>
-  <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="/favicon.ico" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.min.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
 
-  <script type="text/javascript" src="./js/menu.min.js" async></script>
+  <script type="text/javascript" src="/js/menu.min.js" async></script>
 </head>
 
 <body>
@@ -19,12 +19,13 @@
   </a>
   <div id="side-bar">
     <nav class="pure-menu main-nav">
-      <a href="./index.html"><div class="pure-menu-heading pic-wrapper"><img class="profile-pic" src="./img/prof-pic.jpg"></div></a>
+      <a href="/"><div class="pure-menu-heading pic-wrapper"><img class="profile-pic" src="/img/prof-pic.jpg"></div></a>
       <ul class="pure-menu-list">
+      <!-- <li class="pure-menu-item first-item"><a class="pure-menu-link" href="./index.html">Home</a></li> -->
         <li class="pure-menu-item first-item"><a class="pure-menu-link" href="http://blog.jafnee.com">Blog</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="#!">Projects</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="./resume.html">Resumé</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="./contact.html">Contact</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="/projects">Projects</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="/resume.html">Resumé</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="/contact.html">Contact</a></li>
       </ul>
     </nav>   
     <section id="social" class="pure-menu">
@@ -38,15 +39,21 @@
 
   <section id="main">
     <header>
-      <h1>Jafnee Jesmee</h1>
+      <h1><a href="/">Jafnee Jesmee</a></h1>
       <p>Fresh BSc Computer Science Graduate</p>
     </header>
     <article>
       <h2>Want to get in touch?</h2>
       <p>
         <ul>
-          <li>Drop me an email at mail@jafnee.com</li>
-          <li>Leave me a message using the contact form below</li>
+          <li>Drop me an email at <a href="mailto:mail@jafnee.com">mail@jafnee.com</a></li>
+          <li>Find me on:
+            <ul>
+              <li><a href="https://github.com/Jafnee">Github</a></li>
+              <li><a href="http://uk.linkedin.com/in/jafnee">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li>Or leave me a message using the contact form below</li>
         </ul>
       </p>
     </article>

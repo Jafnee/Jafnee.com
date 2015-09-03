@@ -12,6 +12,7 @@ body {
 
 body,
 #side-bar,
+#social,
 .menu-link {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -25,6 +26,25 @@ body,
 
 .name {
   font-family: "Roboto Slab", serif; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.full-btn {
+  width: 100%; }
+
+.play {
+  background: #1cb841; }
+
+.source {
+  background: #AAAAAA; }
+
+.bottom {
+  position: relative;
+  bottom: 0; }
 
 @media (max-width: 46em) {
   body {
@@ -105,12 +125,9 @@ body {
     #side-bar #social li a:focus {
       background: #333; }
 
-@media (max-height: 35.5em) {
-  #side-bar #social {
-    visibility: hidden; }
-
-  .hideme {
-    visibility: visible; } }
+@media (max-height: 40em) {
+  #social {
+    margin-left: -10em; } }
 @media (max-width: 46em) {
   body {
     padding-left: 0; }
@@ -155,7 +172,7 @@ section#main > article {
   position: relative;
   margin: 0 auto;
   padding: 0 2em 0;
-  max-width: 800px;
+  max-width: 1300px;
   margin-bottom: 50px;
   line-height: 1.5em;
   font-family: "Open Sans", sans-serif; }
@@ -168,9 +185,18 @@ section#main > article {
     color: #001f3f;
     font-weight: 300; }
 
+.project-desc {
+  overflow: auto; }
+
+.project-unit {
+  padding: 1em; }
+
 @media (max-width: 46em) {
   header {
-    padding: 2.5em 2em 0; } }
+    padding: 2.5em 2em 0; }
+
+  .project-desc {
+    height: auto; } }
 section#main {
   padding-bottom: 2.4em; }
 

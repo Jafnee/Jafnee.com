@@ -115,13 +115,10 @@ body {
 
 // Responsive
 
-@media (max-height: 35.5em) {
-    #side-bar #social {
-        visibility: hidden;
-    }
-
-    .hideme {
-        visibility: visible;
+@media (max-height: 40em) {
+    #social {
+        // visibility: hidden;
+        margin-left: -$side-bar-width;
     }
 }
 

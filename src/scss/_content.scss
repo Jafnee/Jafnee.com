@@ -49,6 +49,13 @@ section#main {
     }
 }
 
+a.inline {
+    color:$blue;
+    &:hover {
+        color:$aqua;
+    }
+}
+
 .project-desc {    
     overflow: auto;
 }

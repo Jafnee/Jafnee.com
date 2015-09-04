@@ -185,6 +185,11 @@ section#main > article {
     color: #001f3f;
     font-weight: 300; }
 
+a.inline {
+  color: #0074D9; }
+  a.inline:hover {
+    color: #7FDBFF; }
+
 .project-desc {
   overflow: auto; }
 

@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
   <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
-
   <script type="text/javascript" src="/js/menu.min.js" async></script>
 </head>
 
@@ -18,96 +17,117 @@
   <a href="" id="menuLink" class="menu-link">
     <span id="expandicon" class="fa fa-bars fa-2x"></span>
   </a>
+
   <div id="side-bar">
     <nav class="pure-menu main-nav">
-      <a href="/"><div class="pure-menu-heading pic-wrapper"><img class="profile-pic" src="/img/prof-pic.jpg"></div></a>
-      <ul class="pure-menu-list">
-      <!-- <li class="pure-menu-item first-item"><a class="pure-menu-link" href="./index.html">Home</a></li> -->
-        <li class="pure-menu-item first-item"><a class="pure-menu-link" href="http://blog.jafnee.com">Blog</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="/projects">Projects</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="/resume.html">Resumé</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="/contact.html">Contact</a></li>
-      </ul>
+    <a href="/"><div class="pure-menu-heading pic-wrapper"><img class="profile-pic" src="/img/prof-pic.jpg"></div></a>
+    <ul class="pure-menu-list">
+    <!-- <li class="pure-menu-item first-item"><a class="pure-menu-link" href="./index.html">Home</a></li> -->
+    <li class="pure-menu-item first-item"><a class="pure-menu-link" href="http://blog.jafnee.com">Blog</a></li>
+    <li class="pure-menu-item"><a class="pure-menu-link" href="/projects">Projects</a></li>
+    <li class="pure-menu-item"><a class="pure-menu-link" href="/resume.html">Resumé</a></li>
+    <li class="pure-menu-item"><a class="pure-menu-link" href="/contact.html">Contact</a></li>
+    </ul>
     </nav>   
     <section id="social" class="pure-menu">
-      <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a class="pure-menu-link" href="mailto:mail@jafnee.com"><i class="fa fa-envelope fa-fw"></i>&nbsp; E-Mail</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/Jafnee"><i class="fa fa-github fa-fw"></i>&nbsp; GitHub</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="http://uk.linkedin.com/in/jafnee"><i class="fa fa-linkedin fa-fw"></i>&nbsp; LinkedIn</a></li>
-      </ul>
+    <ul class="pure-menu-list">
+    <li class="pure-menu-item"><a class="pure-menu-link" href="mailto:mail@jafnee.com"><i class="fa fa-envelope fa-fw"></i>&nbsp; E-Mail</a></li>
+    <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/Jafnee"><i class="fa fa-github fa-fw"></i>&nbsp; GitHub</a></li>
+    <li class="pure-menu-item"><a class="pure-menu-link" href="http://uk.linkedin.com/in/jafnee"><i class="fa fa-linkedin fa-fw"></i>&nbsp; LinkedIn</a></li>
+    </ul>
     </section>    
   </div>
 
   <section id="main">
     <header>
-      <h1><a href="/">Jafnee Jesmee</a></h1>
-      <p>Fresh BSc Computer Science Graduate</p>
+    <h1><a href="/">Jafnee Jesmee</a></h1>
+    <p>BSc Computer Science Graduate</p>
     </header>
+
     <article>
-      <h2>Projects</h2>
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-xl-1-3">
+    <h2>Projects</h2>
+    <h3>Web Based</h3>
+    <hr>
+    <div class="pure-g"> 
+      <div class="pure-u-1 pure-u-xl-1-2 project-bg">
         <div class="project-unit">
-          <h4>Generic Space Shooter</h4>
-          <div class="project-desc">
-            <p>A web-based side-scrolling shoot-em-up game implemented using HTML5 Canvas.</p>
-          <div class="pure-g">
-            <div class="pure-u-1-2">
-              <a class="pure-button full-btn " href="https://github.com/Jafnee/Generic-Space-Shooter"><i class="fa fa-github fa-fw fa-lg"></i>Source</a>
-            </div>
-            <div class="pure-u-1-2">
-              <a class="pure-button full-btn play" href="http://lab.jafnee.com/Generic-Space-Shooter/"><i class="fa fa-play fa-fw fa-lg"></i>Demo</a>
-            </div>
-          </div>
-          </div>
+        <h4 class="project-name">Jafnee.com</h4>
+        <div class="project-desc">
+        <p>My personal website, the one you are on right now.</p>
+        <p>This is a static website consisting of multiple HTML files. The website is styled using <a class="inline" href="http://sass-lang.com/">Sass</a> and uses <a class="inline" href="http://purecss.io/">PureCSS</a> for it's responsive modules. I make use of <a class="inline" href="http://gruntjs.com/">Grunt</a> to automate compiling of Sass, minifying images and minifying CSS. The website is deployed through the use of GitHub's webhooks, every time a new commit is pushed to the master branch, the VPS will pull the changes and updates the website's files.</p>
+        <p>The website is hosted on a self managed virtual private server (VPS) running Debian GNU/Linux and Apache as the web server.</p>
+        <p>Technologies used: <strong>HTML</strong>, <strong>Sass</strong>, <strong>JavaScript</strong>, <strong>Grunt</strong>, <strong>Apache</strong></p>
         </div>
+        <div class="pure-g">
+        <div class="pure-u-1-2">
+        <a class="pure-button full-btn bottom" href="https://github.com/Jafnee/Jafnee.com"><i class="fa fa-github fa-fw fa-lg"></i>Source</a>
         </div>
-        <div class="pure-u-1 pure-u-xl-1-3">
-        <div class="project-unit">
-          <h4>Solar System</h4>
-          <div class="project-desc">
-            <p>A 3D WebGL solar system. Created as part of my university assignment.</p>
-          </div>
-          <div class="pure-g">
-            <div class="pure-u-1-2">
-              <a class="pure-button full-btn " href="https://github.com/Jafnee/Solar-System"><i class="fa fa-github fa-fw fa-lg"></i>Source</a>
-            </div>
-            <div class="pure-u-1-2">
-              <a class="pure-button full-btn play" href="http://lab.jafnee.com/Solar-System/"><i class="fa fa-play fa-fw fa-lg"></i>Demo</a>
-            </div>
-          </div>
+        <div class="pure-u-1-2">
+        <a class="pure-button full-btn pure-button-disabled play"><i class="fa fa-play fa-fw fa-lg"></i>Demo</a>
         </div>
-        </div>
-        <div class="pure-u-1 pure-u-xl-1-3">
-        <div class="project-unit">
-          <h4>Jafnee.com</h4>
-          <div class="project-desc">
-            <p>My personal website.</p>
-          </div>
-          <div class="pure-g">
-            <div class="pure-u-1-2">
-              <a class="pure-button full-btn bottom" href="https://github.com/Jafnee/Jafnee.com"><i class="fa fa-github fa-fw fa-lg"></i>Source</a>
-            </div>
-            <div class="pure-u-1-2">
-              <a class="pure-button full-btn pure-button-disabled play"><i class="fa fa-play fa-fw fa-lg"></i>Demo</a>
-            </div>
-          </div>
         </div>
         </div>
       </div>
+
+      <div class="pure-u-1 pure-u-xl-1-2 project-bg">
+        <div class="project-unit">
+        <h4 class="project-name">Generic Space Shooter</h4>
+        <div class="project-desc">
+        <p>A web-based top-down scrolling shoot-em-up game set in space.<br> The game features level based gameplay with increasing difficulty, various enemies each with different behaviours and multiple power-ups for the player to collect.</p>
+        <p>*Game has not been tested on mobile.</p>
+        <p>Technologies used: <strong>HTML5 canvas</strong>, <strong>JavaScript</strong></p>
+        <!-- <dl>
+        <dt>Technologies used</dt>
+        <dd>HTML5 Canvas</dd>
+        <dd>JavaScript</dd>
+        <dd><a class="inline" href="http://lab.jafnee.com/Generic-Space-Shooter/about.html">Resources used</a></dd>
+        </dl> -->
+        <div class="pure-g">
+        <div class="pure-u-1-2">
+        <a class="pure-button full-btn " href="https://github.com/Jafnee/Generic-Space-Shooter"><i class="fa fa-github fa-fw fa-lg"></i>Source</a>
+        </div>
+        <div class="pure-u-1-2">
+        <a class="pure-button full-btn play" href="http://lab.jafnee.com/Generic-Space-Shooter/"><i class="fa fa-play fa-fw fa-lg"></i>Demo</a>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-xl-1-2 project-bg">
+        <div class="project-unit">
+        <h4 class="project-name">Solar System</h4>
+        <div class="project-desc">
+        <p>A 3D WebGL solar system.<br>
+        JavaScript 3D libraries such as three.js are not used to simplify drawing and manipulating the objects. Instead <a class="inline" href="http://glmatrix.net/">glMatrix</a>, a JavaScript matrix and vector library was used to perform matrix calculations on a 3D object's vertices in order to manipulate it.</p>
+        <p>Different forms of lighting such as ambient, diffuse and specular were used. Specular maps were also applied to some planets</p>
+        <p>Technologies used: <strong>WebGL</strong>, <strong>HTML5 canvas</strong>, <strong>JavaScript</strong></p>
+        </div>
+        <div class="pure-g">
+        <div class="pure-u-1-2">
+        <a class="pure-button full-btn " href="https://github.com/Jafnee/Solar-System"><i class="fa fa-github fa-fw fa-lg"></i>Source</a>
+        </div>
+        <div class="pure-u-1-2">
+        <a class="pure-button full-btn play" href="http://lab.jafnee.com/Solar-System/"><i class="fa fa-play fa-fw fa-lg"></i>Demo</a>
+        </div>
+        </div>
+        </div>
+      </div>      
+    </div>
     </article>
   </section>
 
   <footer>
     Copyright © 2015 <span class="name">Jafnee Jesmee</span>
   </footer>
+
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-67022879-1', 'auto');
-    ga('send', 'pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-67022879-1', 'auto');
+  ga('send', 'pageview');
   </script>
 </body>
 </html>

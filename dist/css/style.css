@@ -59,7 +59,7 @@ body {
   top: 0;
   left: 0;
   color: #191818;
-  background: white;
+  background: transparent;
   padding: 7px;
   z-index: 50; }
   .menu-link.active {
@@ -191,10 +191,16 @@ a.inline {
     color: #7FDBFF; }
 
 .project-desc {
-  overflow: auto; }
+  overflow: auto;
+  padding-bottom: 1em; }
+  .project-desc p {
+    margin: 0 0 1.2em 0; }
+
+.project-name {
+  line-height: 2px; }
 
 .project-unit {
-  padding: 1em; }
+  padding: 0em 1em 1em 1em; }
 
 @media (max-width: 46em) {
   header {

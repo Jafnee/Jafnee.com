@@ -56,8 +56,25 @@ a.inline {
     }
 }
 
-.project-desc {    
+.project-bg {
+    // background: $silver;
+    // background: rgba(255, 0, 0, 0.3);
+}
+
+.project-desc {
     overflow: auto;
+    padding-bottom: 1em;
+    & p {
+        // background:red;
+        // padding: 0 0 1em 0;
+        margin: 0 0 1.2em 0;
+    }
+}
+
+.project-name {
+    line-height: 2px;
+    // padding:0;
+    // margin:0;
 }
 
 .project-group {
@@ -67,7 +84,7 @@ a.inline {
 }
 
 .project-unit {
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
 }
 
 @media (max-width: 46em) {

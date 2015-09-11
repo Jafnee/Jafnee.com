@@ -27,6 +27,9 @@ body,
 .name {
   font-family: "Roboto Slab", serif; }
 
+.italic {
+  font-style: italic; }
+
 .left {
   float: left; }
 
